@@ -1,0 +1,202 @@
+/*
+VBNC.css a basic css style for the bank. Use this as a template.
+All those used in this style must be present in other styles for correct display.
+*/
+body 
+{
+ font-family:"Times New Roman", Times, serif;
+ font-size: 100.0%;
+ background-color: #6699FF;
+ color: #FFFF00;
+ font-weight:bold;
+}
+
+/*used for user notices on pages*/ 
+tiny
+{
+ font-size: 67.00%;
+}
+ 
+/*Used for error messages.*/ 
+error
+{
+ color: #FFFF00;
+} 
+ 
+/*Links*/
+a:link 
+{
+	color: #FF3300;
+	text-decoration: none;
+}
+
+a:active, a:visited
+{
+	color: #FF0000;
+	text-decoration: none;
+}
+
+a:hover 
+{
+ color: #FF3333;
+ text-decoration: underline;
+}
+
+a span 
+ {
+ display: none; position: absolute;
+ border: 1px solid;
+ background: #6699FF;
+ color: #FFFF00;
+ padding: 3px;
+ }
+
+a:hover span 
+ { 
+ display: block;
+ text-decoration: none;
+ }
+
+h1, h2, h3, h4, h5
+{
+ color: #c70000;
+ font-family:"Georgia", Georgia, serif;
+ font-weight: 900;
+ line-height: 0%
+}
+
+h6
+{
+ color: #c70000;
+ font-family:"Georgia", Georgia, serif;
+ font-weight:400;
+ line-height: 0%
+}
+
+/*table*/
+th.left
+{
+ text-align: left;
+ text-decoration: underline;
+}
+
+th.center
+{
+ text-align: center;
+ text-decoration: underline;
+}
+
+th.right
+{
+ text-align: right;
+ text-decoration: underline;
+}
+
+td.center
+{
+ text-align: center;
+}
+
+td.left
+{
+ text-align: left;
+}
+
+td.right
+{
+ text-align: right;
+} 
+ 
+/* various coloring options, needed for the country summary */
+.one { background-color: #FFFF00; }
+ 
+.oneOne { background-color: #FFFF99; }
+.oneTwo { background-color: #FFFF00; }
+ 
+.two { background-color: #FFFF99; }
+ 
+.twoOne { background-color: #FFFF99 }
+.twoTwo { background-color: #FFFF00 }
+
+/**************** menu coding *****************/
+#menu {
+width: 100%;
+background: #6699FF;
+float: left;
+}
+
+#menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+width: 12em;
+float: left;
+}
+
+#menu a, #menu h2, #menu sub_menu {
+font: bold 11px/16px arial, helvetica, sans-serif;
+display: block;
+border-width: 1px;
+border-style: solid;
+border-color: #ccc #888 #555 #bbb;
+margin: 0;
+padding: 2px 3px;
+}
+
+#menu h2 {
+color: #FFFF00;
+background: #0A0A6F;
+text-transform: uppercase;
+}
+
+#menu a, #menu sub_menu {
+color: #FFFF00;
+background: #6699FF;
+text-decoration: none;
+}
+
+#menu a:hover {
+color: #FF0000;
+background: #6699FF;
+}
+
+#menu li {position: relative;}
+
+#menu ul ul {
+position: absolute;
+z-index: 500;
+}
+
+#menu ul ul ul {
+position: absolute;
+top: 0;
+left: 100%;
+}
+
+div#menu ul ul,
+div#menu ul li:hover ul ul,
+div#menu ul ul li:hover ul ul
+{display: none;}
+
+div#menu ul li:hover ul,
+div#menu ul ul li:hover ul,
+div#menu ul ul ul li:hover ul
+{display: block;}
+
+<!--[if IE]>
+#menu ul li {float: left; width: 100%;}
+<![endif]-->
+
+<!--[if lt IE 7]>
+body {
+behavior: url(csshover.htc);
+font-size: 100%;
+}
+
+#menu ul li a {height: 1%;} 
+
+#menu a, #menu h2, #menu sub_menu {
+font: bold 0.7em/1.4em arial, helvetica, sans-serif;
+}
+
+<![endif]-->

@@ -1,0 +1,246 @@
+/*
+Simple.css a basic css style for the bank. Use this as a template.
+All those used in this style must be present in other styles for correct display.
+*/
+body 
+{
+ font-family: " Arial", Lucida Grande, Verdana, Helvetica, sans-serif;
+ font-size: 80.0%;
+ background-color: #ffffff;
+ color: #000000;
+}
+
+/*used for user notices on pages*/ 
+tiny
+{
+ font-size: 67.00%;
+}
+ 
+/*Used for error messages.*/ 
+error
+{
+ color: #cc0000;
+} 
+
+/* The following is used in other custom styles but simple uses the html defaults /*
+
+/*Links*/
+/*
+a:link 
+{
+	color: #F32;
+	text-decoration: none;
+}
+
+a:active, a:visited
+{
+	color: #A1A;
+	text-decoration: none;
+}
+
+a:hover 
+{
+ color: #F65;
+ text-decoration: underline;
+}
+
+ a span 
+ {
+ display: none; 
+ position: absolute;
+ left: 75px;
+ border: 1px solid;
+ padding: 3px;
+ colour: #000000;
+ background: #ffffff;
+ }
+
+a:hover span { display: block }
+
+*/
+
+/*forms*/
+
+/*
+form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+input {
+	color: #2186FF;
+	font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	padding: 1px;
+	border: 1px solid #A9B8C2;
+	background-color: #312439;
+}
+
+textarea {
+	background-color: #312439;
+	color: #2186FF;
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1.3em; 
+	line-height: 1.4em;
+	font-weight: normal;
+	border: 1px solid #A9B8C2;
+	padding: 2px;
+}
+
+select {
+	color: #2186FF;
+	background-color: #312439;
+	font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	border: 1px solid #A9B8C2;
+	padding: 1px;
+}
+
+option {
+	padding: 0 1em 0 0;
+}
+
+option.disabled-option {
+	color: graytext;
+}
+
+.rtl option {
+	padding: 0 0 0 1em;
+}
+
+input.radio {
+	border: none;
+	background-color: transparent;
+}
+ 
+*/
+ 
+/*table*/
+th.left
+{
+ text-align: left;
+ text-decoration: underline;
+}
+
+th.center
+{
+ text-align: center;
+ text-decoration: underline;
+}
+
+th.right
+{
+ text-align: right;
+ text-decoration: underline;
+}
+
+td.center
+{
+ text-align: center;
+}
+
+td.left
+{
+ text-align: left;
+}
+
+td.right
+{
+ text-align: right;
+} 
+ 
+/* various coloring options, needed for the country summary */
+/* Should just be to alternating colours for behind text in a table.  */
+.one { background-color: #cccccc; }
+ 
+.oneOne { background-color: #999999; }
+.oneTwo { background-color: #cccccc; }
+ 
+.two { background-color: #999999; }
+ 
+.twoOne { background-color: #999999 }
+.twoTwo { background-color: #cccccc }
+
+/**************** menu coding *****************/
+#menu {
+width: 100%;
+background: #eee;
+float: left;
+}
+
+#menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+width: 12em;
+float: left;
+}
+
+#menu a, #menu h2, #menu sub_menu {
+font: bold 11px/16px arial, helvetica, sans-serif;
+display: block;
+border-width: 1px;
+border-style: solid;
+border-color: #ccc #888 #555 #bbb;
+margin: 0;
+padding: 2px 3px;
+}
+
+#menu h2 {
+color: #fff;
+background: #000;
+text-transform: uppercase;
+}
+
+#menu a, #menu sub_menu {
+color: #000;
+background: #efefef;
+text-decoration: none;
+}
+
+#menu a:hover {
+color: #a00;
+background: #fff;
+}
+
+#menu li {position: relative;}
+
+#menu ul ul {
+position: absolute;
+z-index: 500;
+}
+
+#menu ul ul ul {
+position: absolute;
+top: 0;
+left: 100%;
+}
+
+div#menu ul ul,
+div#menu ul li:hover ul ul,
+div#menu ul ul li:hover ul ul
+{display: none;}
+
+div#menu ul li:hover ul,
+div#menu ul ul li:hover ul,
+div#menu ul ul ul li:hover ul
+{display: block;}
+
+<!--[if IE]>
+#menu ul li {float: left; width: 100%;}
+<![endif]-->
+
+<!--[if lt IE 7]>
+body {
+behavior: url(csshover.htc);
+font-size: 100%;
+}
+
+#menu ul li a {height: 1%;} 
+
+#menu a, #menu h2, #menu sub_menu {
+font: bold 0.7em/1.4em arial, helvetica, sans-serif;
+}

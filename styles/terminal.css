@@ -1,0 +1,233 @@
+/*Most of this was lifted from the style for the Shireroth forum*/
+
+body
+{
+	font-family: 'monospace', serif, Lucida Grande, Verdana, Helvetica, Arial, sans-serif;
+	color: #00cc00;
+	background-color: #000000;
+	font-size: 80.0%;
+	margin: 10;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+ color: #ffffff;
+}
+
+tiny
+{
+ font-size: 67.0%;
+}
+
+error
+{
+ color: #cc0000;
+}
+
+/*Links*/
+a:link 
+{
+	color: #339933;
+	text-decoration: none;
+}
+
+a:active, a:visited
+{
+	color: #339933;
+	text-decoration: none;
+}
+
+a:hover 
+{
+ color: #339933;
+ text-decoration: underline;
+}
+
+a span
+ {
+ display: none; position: absolute;
+ border: 1px solid;
+ background: #000000;
+ padding: 3px;
+ }
+
+a:hover span { display: block }
+
+/*forms*/
+form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+input {
+	color: #00cc00;
+	font-family: 'monospace', serif, Lucida Grande, Verdana, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	padding: 1px;
+	border: 1px solid #A9B8C2;
+	background-color: #000000;
+}
+
+textarea {
+	background-color: #000000;
+	color: #00cc00;
+	font-family: "monospace", serif, Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1.3em; 
+	line-height: 1.4em;
+	font-weight: normal;
+	border: 1px solid #A9B8C2;
+	padding: 2px;
+}
+
+select {
+	color: #00cc00;
+	background-color: #000000;
+	font-family: "monospace, serif, Verdana, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	border: 1px solid #A9B8C2;
+	padding: 1px;
+}
+
+option {
+	padding: 0 1em 0 0;
+}
+
+option.disabled-option {
+	color: graytext;
+}
+
+input.radio {
+	border: none;
+	background-color: transparent;
+}
+
+/*table*/
+
+th.left
+{
+ text-align: left;
+ text-decoration: underline;
+}
+
+th.center
+{
+ text-align: center;
+ text-decoration: underline;
+}
+
+th.right
+{
+ text-align: right;
+ text-decoration: underline;
+}
+
+td.center
+{
+ text-align: center;
+}
+
+td.left
+{
+ text-align: left;
+}
+
+td.right
+{
+ text-align: right;
+}
+
+/* various coloring options, needed for the country summary */
+.one { background-color: #0A0A6F; }
+
+.oneOne { background-color: #11117D; }
+.oneTwo { background-color: #0A0A6F; }
+
+.two { background-color: #11117D; }
+
+.twoOne { background-color: #11117D }
+.twoTwo { background-color: #0A0A6F }
+
+/**************** menu coding *****************/
+#menu {
+width: 100%;
+background: #000000;
+float: left;
+}
+
+#menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+width: 12em;
+float: left;
+}
+
+#menu a, #menu h2, #menu sub_menu {
+font: bold 11px/16px arial, helvetica, sans-serif;
+display: block;
+border-width: 1px;
+border-style: solid;
+border-color: #ccc #888 #555 #bbb;
+margin: 0;
+padding: 2px 3px;
+}
+
+#menu h2 {
+color: 00cc00;
+background: #000000;
+text-transform: uppercase;
+}
+
+#menu a, #menu sub_menu {
+color: 00cc00;
+background: #000000;
+text-decoration: none;
+}
+
+#menu a:hover {
+color: 00cc00;
+background: #000000;
+}
+
+#menu li {position: relative;}
+
+#menu ul ul {
+position: absolute;
+z-index: 500;
+}
+
+#menu ul ul ul {
+position: absolute;
+top: 0;
+left: 100%;
+}
+
+div#menu ul ul,
+div#menu ul li:hover ul ul,
+div#menu ul ul li:hover ul ul
+{display: none;}
+
+div#menu ul li:hover ul,
+div#menu ul ul li:hover ul,
+div#menu ul ul ul li:hover ul
+{display: block;}
+
+<!--[if IE]>
+#menu ul li {float: left; width: 100%;}
+<![endif]-->
+
+<!--[if lt IE 7]>
+body {
+behavior: url(csshover.htc);
+font-size: 100%;
+}
+
+#menu ul li a {height: 1%;} 
+
+#menu a, #menu h2, #menu sub_menu {
+font: bold 0.7em/1.4em arial, helvetica, sans-serif;
+}
+
