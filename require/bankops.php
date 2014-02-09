@@ -62,14 +62,14 @@ function transfer_funds($instigator, $sender, $receiver, $funds, $reason, $serve
  
  if (($funds <= 0)||(!is_numeric($funds))) //make sure it's not a neg or 0 num, or has letters.
  {
- 	print ('Funds to be transfered must be a positive, non-negative number.<br />');
+ 	bank_error ('Funds to be transfered must be a positive, non-negative number.<br />');
 	return 5;
  }
  else //it's not negative or 0, and it's a number.
  {
  	if ($sender == $receiver) //Are they sending to themselves?
  	{
-	print ('You cannot transfer funds to yourself.<br />');	 
+	bank_error ('You cannot transfer funds to yourself.<br />');	 
 	 return 4;
  	}
  	else //They are not sending to themselves.
